@@ -7,40 +7,23 @@ public class GameManager : Singleton<GameManager>
 {
     PlayerInput playerInput;
 
-    [SerializeField] private GameObject canvas;
-
-    private bool isPaused;
-
     private void Awake()
     {
         playerInput = new PlayerInput();
+    }
+
+    private void OnEnable()
+    {
         playerInput.Game.Enable();
     }
 
-    void Update()
+    private void OnDisable()
     {
-        float inputPause = playerInput.Game.Pause.ReadValue<float>();
-
-        if (inputPause > 0)
-        {
-            isPaused = !isPaused;
-        }
-
-        canvas.SetActive(isPaused);
+        playerInput.Game.Disable();
     }
 
-    public void ResumeGame()
+    public PlayerInput.GameActions GetGameInput()
     {
-        isPaused = false;
-    }
-
-    public void GoBackToMainMenu()
-    {
-        SceneManager.LoadScene("StartMenuScene");
-    }
-
-    public bool IsGamePaused()
-    {
-        return isPaused;
+        return playerInput.Game;
     }
 }

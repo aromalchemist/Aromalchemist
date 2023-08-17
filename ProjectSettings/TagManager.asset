@@ -41,6 +41,12 @@ TagManager:
   - name: Background
     uniqueID: 4165177963
     locked: 0
+  - name: Plants
+    uniqueID: 1195980553
+    locked: 0
+  - name: Colliders
+    uniqueID: 1853585717
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

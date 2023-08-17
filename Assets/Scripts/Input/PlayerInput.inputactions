@@ -4,30 +4,8 @@
         {
             "name": "Menu",
             "id": "74dcfda6-0e22-4cd7-a3ea-a0c9e7d7ea98",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "2ca4d668-5e4e-4e4f-bb90-f0160aea4ac0",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "c958b120-ca12-4327-9df9-23fc9e665018",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
+            "actions": [],
+            "bindings": []
         },
         {
             "name": "Game",
